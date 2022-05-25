@@ -3,13 +3,13 @@
 #include "./concreteDecoratorC.h"
 #include <iostream>
 
-concreteDecoratorC::concreteDecoratorC(std::shared_ptr<component> o) :
-    decorator(o) {
+concreteDecoratorC::concreteDecoratorC(std::shared_ptr<component> obj) :
+    decorator(obj) {
 }
 
 concreteDecoratorC::~concreteDecoratorC() {
 }
 
 std::string concreteDecoratorC::operation() {
-    return wrappedObj->operation() + "C";
+    return decorator::operation() + "C";
 }

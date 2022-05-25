@@ -11,5 +11,5 @@ concreteDecoratorA::~concreteDecoratorA() {
 }
 
 std::string concreteDecoratorA::operation() {
-    return wrappedObj->operation() + "A";
+    return decorator::operation() + "A";
 }

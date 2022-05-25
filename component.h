@@ -13,6 +13,7 @@ class component {
     ~component();
 
     virtual std::string operation() = 0;
+
  private:
 };
 

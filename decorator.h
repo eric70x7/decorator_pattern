@@ -4,7 +4,7 @@
 #define DECORATOR_H_
 
 #include <memory>
-#include <iostream>
+#include <string>
 #include "./component.h"
 
 #pragma once
@@ -14,7 +14,9 @@ class decorator : public component {
     explicit decorator(std::shared_ptr<component>);
     ~decorator();
 
- protected:
+    std::string operation() override;
+
+ private:
     std::shared_ptr<component> wrappedObj;
 };
 

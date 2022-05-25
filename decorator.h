@@ -4,6 +4,7 @@
 #define DECORATOR_H_
 
 #include <memory>
+#include <iostream>
 #include "./component.h"
 
 #pragma once

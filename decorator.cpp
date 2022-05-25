@@ -8,4 +8,4 @@ decorator::decorator(std::shared_ptr<component> o) :
 }
 
 decorator::~decorator() {
-}
+};

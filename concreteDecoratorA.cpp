@@ -3,8 +3,8 @@
 #include "./concreteDecoratorA.h"
 #include <iostream>
 
-concreteDecoratorA::concreteDecoratorA(std::shared_ptr<component> o) :
-    decorator(o) {
+concreteDecoratorA::concreteDecoratorA(std::shared_ptr<component> obj) :
+    decorator(obj) {
 }
 
 concreteDecoratorA::~concreteDecoratorA() {
